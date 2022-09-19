@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatelessWidget {
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
               height: 20,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => context.goNamed('main_page'),
               child: Text(
                 'LOGIN',
                 style: GoogleFonts.inter(fontWeight: FontWeight.bold),
