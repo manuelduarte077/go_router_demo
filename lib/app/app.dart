@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_demo/routes/rputer.dart';
+import 'package:go_router_demo/routes/router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -8,6 +8,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       theme: ThemeData(
         appBarTheme: const AppBarTheme(centerTitle: true, elevation: 0),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(elevation: 0),
+        ),
       ),
       debugShowCheckedModeBanner: false,
       routeInformationParser: router.routeInformationParser,
