@@ -1,7 +1,8 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router_demo/routes/router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../routing/app_router.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key, required this.sharedPreferences}) : super(key: key);
