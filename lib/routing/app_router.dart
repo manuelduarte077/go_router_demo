@@ -17,6 +17,7 @@ final GoRouter router = GoRouter(
       /// Rutas que salen de Home
       routes: [
         GoRoute(
+
           path: 'about',
           name: 'about',
           builder: (context, state) => const AboutPage(),
